@@ -1,23 +1,68 @@
 public class OOPS {
   public static void main(String args[]){
-    Calculator calc = new Calculator();
-    System.out.println(calc.sum((float)1.5, (float)2.5));
-    System.out.println(calc.sum(1, 2, 3));
+    // Horse h = new Horse();
+    // h.eat();
+    // h.walk();
+
+    // Chicken c = new Chicken();
+    // c.eat();
+    // c.walk();
+    // Calculator calc = new Calculator();
+    // System.out.println(calc.sum((float)1.5, (float)2.5));
+    // System.out.println(calc.sum(1, 2, 3));
 
   }
 }
- class Calculator{
-    int sum(int a, int b){
-        return a+b;
+class Student{
+    String name;
+    int roll;
 
+    static String schoolName;
+
+    void setName(String name){
+        this.name = name;
     }
-    float sum(float a, float b){
-        return a+b;
+    
+    String getName() {
+        return this.name;
+      
     }
-    int sum(int a, int b, int c){
-        return a+b+c;
-    }
- }
+    
+}
+// abstract class Animal {
+//     void eat() {
+//         System.out.println("animal eats");
+//     }
+//     abstract void walk();
+// }
+// class Horse extends Animal{
+//     void walk(){
+//         System.out.println("walks on 4 legs");
+//     }
+// }
+// class Chicken extends Animal{
+//     void walk(){
+//         System.out.println("walks on 2 legs");
+//     }
+// }
+
+
+
+
+
+
+//  class Calculator{
+//     int sum(int a, int b){
+//         return a+b;
+
+//     }
+//     float sum(float a, float b){
+//         return a+b;
+//     }
+//     int sum(int a, int b, int c){
+//         return a+b+c;
+//     }
+//  }
     // public static void main(String args[]){
     //     Dog dobby = new Dog();
     //     dobby.eat();
@@ -136,21 +181,21 @@ public class OOPS {
    
 //     }
 // }
-class Animal{
-    String color;
-    void eat(){
-        System.out.println("eats");
-    }
-    void breathe(){
-        System.out.println("breathes");
-    }
+// class Animal{
+//     String color;
+//     void eat(){
+//         System.out.println("eats");
+//     }
+//     void breathe(){
+//         System.out.println("breathes");
+//     }
 
-class Fish extends Animal{
-    int fins;
-    void swim(){
-        System.out.println("swims in water");
-    }
-}}
+// class Fish extends Animal{
+//     int fins;
+//     void swim(){
+//         System.out.println("swims in water");
+//     }
+// }}
 
 //     class Mammal extends Animal{
 //         int legs;
