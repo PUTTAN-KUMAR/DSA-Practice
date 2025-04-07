@@ -57,15 +57,34 @@ public class Recursion {
             return totWays;
 
            }
-    
+    //    Ques.. //    /////////Remove duplicate in a string
+        // "appnnacollege"
+
+    public static void removeDuplicates(String str,int idx, StringBuilder newStr, Boolean map[]){
+        if(idx == str.length()){
+            System.out.println(newStr);
+            return;
+        }
+        char currChar = str.charAt(idx);
+        if(map[currChar-'a'] == true){
+        removeDuplicates(str, idx=1, newStr, map);
+
+        }else{
+            map[currChar-'a'] = true;
+            removeDuplicates(str, idx+1, newStr.append(currChar), map);
+        }
+    }
 
 
 
 
     public static void main(String args[]){
-        System.out.println(tilingProblem(3));
-        int arr[]={8,3,6,5,4,3,5,6,7,};
-     System.out.println(firstOccurence(arr, 5, 0));
+        String str = "apnnacollege";
+        // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+    //     System.out.println(tilingProblem(5));
+    //     int arr[]={8,3,6,5,4,3,5,6,7,};
+    //  System.out.println(firstOccurence(arr, 5, 0));
 
     }
 }

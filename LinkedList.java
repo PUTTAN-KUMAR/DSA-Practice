@@ -126,7 +126,7 @@ public class LinkedList {
         return slow;
     }
     public boolean checkPalindrom(){
-        if(head == null || head.next!= null){
+        if(head == null || head.next == null){
             return true;
 
         }
